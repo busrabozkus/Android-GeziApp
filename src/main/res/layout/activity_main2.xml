@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="255dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="50dp"
+        android:onClick="resimSec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/foto" />
+
+    <EditText
+        android:id="@+id/sehirAdiText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:ems="15"
+        android:hint="Şehir İsmi"
+        android:inputType="textPersonName"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/tarihText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:ems="15"
+        android:hint="Gittiğim Tarih"
+        android:inputType="textPersonName"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sehirAdiText" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="129dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="140dp"
+        android:background="#F4EDED"
+        android:onClick="kaydet"
+        android:shadowColor="#3DB4C3"
+
+        android:text="KAYDET"
+        android:textAlignment="center"
+        android:textColor="#4722FF"
+        android:textColorHint="#FF5722"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tarihText"
+        app:layout_constraintTop_toBottomOf="@+id/tarihText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
